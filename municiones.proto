@@ -1,0 +1,20 @@
+syntax = "proto3";
+//poner en el paquete correspondiente este archivo después
+package munition;
+
+option go_package = "municiones.proto";
+
+message SolicitudMunicion {
+  int32 id_equipo = 1;
+  int32 cantidad_at = 2;
+  int32 cantidad_mp = 3;
+}
+
+message RespuestaSolicitud {
+  bool aprobado = 1;
+}
+
+service ServidorCentral {
+  rpc SolicitarM(SolicitudMunicion) returns (RespuestaSolicitud);
+}
+
