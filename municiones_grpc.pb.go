@@ -2,7 +2,7 @@
 // versions:
 // - protoc-gen-go-grpc v1.3.0
 // - protoc             v3.12.4
-// source: municiones.proto
+// source: proto/municiones.proto
 
 //poner en el paquete correspondiente este archivo después
 
@@ -107,5 +107,5 @@ var ServidorCentral_ServiceDesc = grpc.ServiceDesc{
 		},
 	},
 	Streams:  []grpc.StreamDesc{},
-	Metadata: "municiones.proto",
+	Metadata: "proto/municiones.proto",
 }
